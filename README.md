@@ -72,6 +72,3 @@ export default defineConfig([
   },
 ])
 ```
-=======
-# E_Commerce
->>>>>>> 12bf5ac5ba093fe6914a8e4e3dd73524ad0ee8c0

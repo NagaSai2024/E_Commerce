@@ -1,5 +1,5 @@
 import { Pagination, PaginationContent, PaginationItem, PaginationNext, PaginationPrevious } from "@/components/ui/pagination";
-import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { supabase } from "@/lib/supabase";
 import { useEffect, useState } from "react";
 
@@ -15,7 +15,7 @@ export default function PaginationDemo() {
     const [endIndex, setEndIndex] = useState(rowPerPage);
 
     const getData = async () => {
-        const { data , error} = await supabase
+        const { data } = await supabase
             .from("sampleadata")
             .select("id, description")
             .order("id", { ascending: true });
